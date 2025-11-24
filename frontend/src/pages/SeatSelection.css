@@ -1,0 +1,154 @@
+.seat-selection-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.seat-layout-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+  position: relative;
+}
+
+.driver-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.front-label {
+  font-size: 0.9rem;
+  color: #2173B3;
+  font-weight: 600;
+}
+
+.driver-area {
+  background: #444;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.tv {
+  background: #e0f7fa;
+  color: #2173B3;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.seat-map {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  justify-content: center;
+  gap: 0.8rem 1.5rem;
+  margin-top: 1.2rem;
+  position: relative;
+}
+
+.aisle-space {
+  grid-column: span 4;
+  height: 12px;
+}
+
+.seat {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  border: 2px solid #4caf50;
+  background: #e8f5e9;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.seat:hover {
+  transform: scale(1.08);
+  background: #c8e6c9;
+}
+
+.seat.selected {
+  background: #2173B3;
+  color: white;
+  border-color: #2173B3;
+}
+
+.seat.emergency {
+  background: #ffb74d;
+  border-color: #ff9800;
+}
+
+.exit-section {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.exit-label {
+  font-weight: 600;
+  color: #f44336;
+  font-size: 1rem;
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.legend-box {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  margin-right: 6px;
+  border: 2px solid #ccc;
+}
+
+.legend-box.available { background: #e8f5e9; border-color: #4caf50; }
+.legend-box.selected { background: #2173B3; border-color: #2173B3; }
+.legend-box.emergency { background: #ffb74d; border-color: #ff9800; }
+
+.proceed-btn {
+  margin-top: 1rem;
+  background: #2173B3;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.proceed-btn:hover {
+  background: #1a5a8a;
+}
+
+@media (max-width: 768px) {
+  .seat-map {
+    grid-template-columns: repeat(4, 45px);
+    gap: 0.6rem 1rem;
+  }
+  .seat {
+    width: 45px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+}
+.seat.booked {
+  background-color: #f81010; /* red */
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.seat.booked:hover {
+  background-color: #ffffff;
+  transform: none;
+}

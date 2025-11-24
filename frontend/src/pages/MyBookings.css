@@ -1,0 +1,257 @@
+/* Center the full bookings container */
+.my-bookings-page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background: #f5f5f5;
+}
+
+/* Limit content width */
+.bookings-container {
+  width: 100%;
+  max-width: 750px;   /* Perfect centered layout */
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2173b3;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* No Bookings Section */
+.no-bookings {
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.book-now-btn {
+  padding: 12px 25px;
+  background: #2173b3;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background: #185a8f;
+  transform: translateY(-2px);
+}
+
+/* Booking Cards */
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booking-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #eef2f7;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.booking-header h3 {
+  font-size: 1.4rem;
+  color: #2173b3;
+  margin-bottom: 5px;
+}
+
+.nroute {
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Status Badge */
+.status {
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.status.confirmed {
+  background: #e6f7ea;
+  color: #2e7d32;
+}
+
+.status.pending {
+  background: #fff4e5;
+  color: #ef6c00;
+}
+
+.status.cancelled {
+  background: #ffebee;
+  color: #c62828;
+}
+
+/* Booking Detail Grid */
+.booking-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-item .label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.detail-item span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.amount {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #2173b3;
+}
+
+.payment-status {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.payment-status.paid {
+  color: #2e7d32;
+}
+
+.payment-status.pending {
+  color: #ef6c00;
+}
+
+.payment-status.failed {
+  color: #c62828;
+}
+
+/* Buttons */
+.booking-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.view-ticket {
+  background: #2173b3;
+  color: white;
+}
+
+.view-ticket:hover {
+  background: #185a8f;
+  transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .booking-card {
+    padding: 1.5rem;
+  }
+
+  .booking-actions {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    width: 100%;
+  }
+}
+
+/* Toggle buttons */
+.booking-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.toggle-btn {
+  padding: 10px 20px;
+  border: 2px solid #2173B3;
+  background: white;
+  color: #2173B3;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle-btn.active {
+  background: #2173B3;
+  color: white;
+}
+
+/* Package image */
+.package-img-box {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.package-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancel-btn {
+  background: #ff3b3b;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancel-btn:hover {
+  background: #d90000;
+}
+
+.status.cancelled {
+  background: #ff3b3b;
+  color: white;
+}
+

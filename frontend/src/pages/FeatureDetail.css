@@ -1,0 +1,48 @@
+.feature-detail {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  padding: 2rem;
+}
+
+.feature-detail-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.feature-detail-card .icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.feature-detail-card h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-detail-card p {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.feature-detail-card button {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.feature-detail-card button:hover {
+  background: #007bff;
+}
