@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create an Axios instance with a base URL
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api",
+  baseURL: process.env.REACT_APP_API_URL || "https://bookngo-zrbr.vercel.app/api",
 });
 
 // Add a request interceptor to include JWT token automatically
